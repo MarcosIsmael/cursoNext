@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className={styles['menu-container']}>
       {menuItems.map((route) => (
 
-        <ActiveLink text={route.text} href={route.href}/>
+        <ActiveLink key={route.href} text={route.text} href={route.href}/>
       ))}
     </nav>
   )
